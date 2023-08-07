@@ -213,6 +213,7 @@ nav {
 }
 .skills .heading,
 .qualification .heading,
+.projects .heading,
 .experience .heading,
 .contact-me .contact-card .heading{
     font-size: 25px;
@@ -295,6 +296,16 @@ nav {
     width: 60%;
     animation: progress 3s 2s infinite forwards;
 }
+
+.skills-grid .box-react-native {
+    width: 80%;
+    animation: progress 3s 2s infinite forwards;
+}
+
+.skills-grid .box-angular {
+    width: 80%;
+    animation: progress 3s 2s infinite forwards;
+}
 .qualification {
     width : 95%;
     margin : 0 auto;
@@ -363,9 +374,25 @@ nav {
     margin : auto 0;
 }
 
+.projects {
+    margin-top: 5rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.projects .heading {
+    width:11%;
+}
+
+.projects .projects-container {
+    margin-top: 15px;
+    padding: 0 20px;
+}
+
+
 
 .experience {
-    margin-top: 7rem;
+    margin-top: 8rem;
     width: 95%;
     height: 45vh;
     margin: 0 auto;
@@ -381,12 +408,13 @@ nav {
     margin: 0 auto;
 }
 
-.experience h3 {
+.experience h3,
+.projects-container h3 {
     margin: 2rem;
     font-weight: 500;
     font-size: 1.5rem;
     color: #66707a;
-    text-decoration: underline;
+
     margin-bottom: 1rem;
 }
 
@@ -399,11 +427,13 @@ nav {
     color: #2e3440;
 }
 
+.projects-container ul,
 .experience ul {
     margin: 1rem 5rem;
     line-height: 1.5rem;
 }
 
+.projects-container li,
 .experience li {
     list-style-type:circle;
 }
@@ -583,7 +613,9 @@ nav {
     margin : 0 auto;
     max-width : 445px;
     }
-
+    .projects .heading{width:30%}
+    .projects-container li,
+    .experience li{text-align: justify;}
     .experience .heading{width: 40%;}
     .contact-me {
         height:120vh;
